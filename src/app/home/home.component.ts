@@ -61,8 +61,7 @@ export class HomeComponent implements OnInit {
     console.log(name.value, text.value);
   }
 
-  openDialog(name, text) {
-    this.dataservice.name = name.value;
+  openDialog(text) {
     this.dataservice.text = text.value;
     this.dialog.open(SelimageComponent, {
       panelClass: "custom-dialog-container"
