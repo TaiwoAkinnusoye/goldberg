@@ -68,8 +68,8 @@ img:focus {
     max-width: initial !important;
   }
   body {
-    /* background: #f78009; */
-    background: url(assets/background.svg);
+    background: #000000;
+    /* background: url(assets/background.svg); */
     background-repeat: no-repeat;
   }
 }
