@@ -16,8 +16,8 @@ import { RouterModule } from "@angular/router";
 import { CloudinaryModule } from "@cloudinary/angular-5.x";
 import * as Cloudinary from "cloudinary-core";
 import { FormsModule } from "@angular/forms";
-import { HappyComponent } from "./happy/happy.component";
-import { ViewhappyComponent } from "./viewhappy/viewhappy.component";
+import { HappyComponent } from "./meme/happy.component";
+import { ViewhappyComponent } from "./viewmeme/viewhappy.component";
 
 //Auth service config
 
