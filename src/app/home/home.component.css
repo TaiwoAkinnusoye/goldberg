@@ -132,7 +132,7 @@
   font-style: normal;
   font-weight: 300;
   font-size: 30px;
-  color: #fff;
+  color: #bb9946;
   line-height: normal;
   text-align: center;
   letter-spacing: -0.02em;
@@ -168,7 +168,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
-  color: #ee9908;
+  color: #bb9946;
 }
 .meet {
   width: 65%;
@@ -185,7 +185,7 @@
   letter-spacing: -0.02em;
   padding-top: 70px;
   padding-bottom: 30px;
-  color: #ef9b09;
+  color: #bb9946;
 }
 .social {
   width: 20%;
