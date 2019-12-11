@@ -5,8 +5,8 @@ import { SelimageComponent } from "../selimage/selimage.component";
 import "rxjs/add/operator/map";
 import { DomSanitizer } from "@angular/platform-browser";
 import { Headers, Http, Response, RequestOptions } from "@angular/http";
-import { HappyComponent } from "../happy/happy.component";
-import { ViewhappyComponent } from "../viewhappy/viewhappy.component";
+import { HappyComponent } from "../meme/happy.component";
+import { ViewhappyComponent } from "../viewmeme/viewhappy.component";
 
 @Component({
   selector: "app-home",
