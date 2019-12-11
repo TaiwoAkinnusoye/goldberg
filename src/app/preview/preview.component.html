@@ -1,0 +1,90 @@
+<div style="text-align:right; padding-bottom: 10px">
+  <img src="assets/close.svg" width="25px" (click)="onNoClick()" />
+</div>
+<mat-dialog-content>
+  <div [style.background]="'url(' + img + ')'" class="main" id="results">
+    <div class="overlay">
+      <div class="malter">
+        <img src="assets/malt.svg" class="malt" />
+      </div>
+      <div class="block">
+        <div class="b1">
+          {{ hap | uppercase }}
+        </div>
+        <div class="b2">
+          {{ text }}
+        </div>
+        <div class="b3">
+          {{ name }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="image">
+    <img id="blah" [src]="imageSrc || 'assets/testimag.png'" width="50%" />
+  </div> -->
+  <div class="shaft">
+    Share
+  </div>
+  <div class="row social">
+    <div class="col-4">
+      <a
+        class="twitter"
+        href="https://twitter.com/intent/tweet?url=http://webcouperstest.com/malt/&text= {{
+          name
+        }} - Happiness is {{ text }}."
+        target="_blank"
+      >
+        <img src="assets/Twitter.svg" width="100%"
+      /></a>
+    </div>
+    <!-- <div class="col-3">
+      <img src="assets/Instagram.svg" width="100%" />
+    </div> -->
+    <div class="col-4">
+      <a
+        href="https://www.facebook.com/sharer/sharer.php?u=http://webcouperstest.com/malt/&quote= {{
+          name
+        }} - Happiness is {{ text }}."
+        target="_blank"
+        ><img src="assets/Facebook.svg" width="100%"
+      /></a>
+    </div>
+    <div class="col-4">
+      <a
+        href="https://api.whatsapp.com/send?phone=whatsappphonenumber&text= {{
+          name
+        }} - Happiness is {{ text }}. http://webcouperstest.com/malt/"
+        target="_blank"
+      >
+        <img src="assets/WhatsApp.svg" width="100%" />
+      </a>
+    </div>
+  </div>
+
+  <a
+    style="margin-top:10px; text-align:center; color: white; margin-bottom: 60px"
+    (click)="download()"
+    download
+  >
+    <div style="text-align:center">
+      <img src="assets/download.svg" class="dw" />
+    </div>
+  </a>
+
+  <!-- <a
+  class="twitter"
+  href="https://twitter.com/intent/tweet?url=http://webcouperstest.com/malt/"
+  target="_blank"
+>
+  tw share</a
+> -->
+
+  <!-- Your share button code -->
+  <!-- <a
+  href="https://www.facebook.com/sharer/sharer.php?u=http://webcouperstest.com/malt/"
+  target="_blank"
+  >fb Share</a
+> -->
+</mat-dialog-content>

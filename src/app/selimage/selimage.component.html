@@ -1,0 +1,51 @@
+<div style="text-align:right; padding-bottom: 10px">
+  <img src="assets/close.svg" width="25px" (click)="onNoClick()" />
+</div>
+<mat-dialog-content>
+  <div>
+    <div class="sel">
+      Select Image
+    </div>
+    <div class="row">
+      <div class="col-4 imgl" style="margin-bottom:10px;">
+        <div class="image" style="display:none">
+          <img
+            id="blah"
+            [src]="imageSrc || 'assets/testimag.png'"
+            width="50%"
+          />
+        </div>
+
+        <div
+          class="upload"
+          style=" background: transparent;
+      text-align: center;
+      padding-top: 0px;"
+        >
+          <input
+            id="YOURID"
+            type="file"
+            class="file-in hider"
+            (change)="fileUpload($event)"
+          />
+          <label for="YOURID" style="    margin-bottom: 20px;"
+            ><img src="assets/upload.svg" width="100%"
+          /></label>
+          <!-- <div class="sell" (click)="go()">
+            NEXT
+          </div> -->
+        </div>
+      </div>
+      <div class="col-4 imgl" *ngFor="let image of imgs">
+        <div (click)="openDialog(image.link)">
+          <img [src]="image.link" width="100%" />
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-dialog-content>
+
+<div id="loading" *ngIf="loader">
+  <!-- <img id="loading-image" src="assets/loader.gif" alt="Loading..." /> -->
+  <div class="loader"></div>
+</div>

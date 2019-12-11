@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.mat-dialog-container {
+  background: #000000;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+@font-face {
+  font-family: regulars;
+  src: url(assets/roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: thins;
+  src: url(assets/roboto/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: mediums;
+  src: url(assets/roboto/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: bolds;
+  src: url(assets/roboto/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: lights;
+  src: url(assets/roboto/Roboto-Light.ttf);
+}
+
+body {
+  /* background: #f78009; */
+  background: url(assets/Desktop-BG.svg);
+  background-repeat: no-repeat;
+  background-size: contain !important;
+}
+.cdk-overlay-pane {
+  width: 50% !important;
+  pointer-events: auto;
+  position: static;
+  max-width: initial !important;
+}
+
+div,
+input,
+img,
+textarea,
+button,
+img:focus {
+  outline: 0 !important;
+}
+.mat-dialog-content {
+  display: block;
+  margin: 0 -24px;
+  padding: 0 24px;
+  max-height: 85vh !important;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+@media screen and (max-width: 600px) {
+  .cdk-overlay-pane {
+    width: 100% !important;
+    pointer-events: auto;
+    position: static;
+    max-width: initial !important;
+  }
+  body {
+    /* background: #f78009; */
+    background: url(assets/background.svg);
+    background-repeat: no-repeat;
+  }
+}

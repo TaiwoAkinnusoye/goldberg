@@ -1,0 +1,19 @@
+<div style="text-align:right; padding-bottom: 10px">
+  <img src="assets/close.svg" width="25px" (click)="onNoClick()" />
+</div>
+<mat-dialog-content class="sider">
+  <div class="meethead">
+    Meet happy people
+  </div>
+  <div class="row meet">
+    <div class="col-4 img-dn" *ngFor="let dat of datas">
+      <div>
+        <img
+          [src]="dat.image_url"
+          width="100%"
+          (click)="viewpic(dat.image_url)"
+        />
+      </div>
+    </div>
+  </div>
+</mat-dialog-content>

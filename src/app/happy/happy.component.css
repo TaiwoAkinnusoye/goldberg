@@ -1,0 +1,27 @@
+.meethead {
+  font-family: lights;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 34px;
+  line-height: normal;
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  color: #ee9908;
+}
+.meet {
+  width: 100%;
+  margin: 0 auto;
+}
+.img-dn {
+  margin-bottom: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.sider {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}

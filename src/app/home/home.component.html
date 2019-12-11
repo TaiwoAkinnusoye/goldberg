@@ -1,0 +1,104 @@
+<div class="head">
+  What does<br />
+  <a style="color: white">Happiness</a><br />
+  mean to you?
+</div>
+
+<div class="share">
+  Share with the world<br />
+  what makes you happy.
+</div>
+
+<div class="top">
+  <!-- <div class="upload-text">Test</div> -->
+  <div class="upload">
+    <input type="text" class="file-in" #name placeholder="e.g. John Doe" />
+  </div>
+  <div class="uploads">
+    <div class="hap">
+      <div class="row">
+        <div class="col-6" style="text-align:left">
+          Happiness is
+        </div>
+        <div class="col-6" style="text-align:right">({{ number }})</div>
+      </div>
+    </div>
+    <textarea
+      type="text"
+      class="file-in2"
+      #text
+      maxlength="25"
+      placeholder="e.g. Drinking Maltina"
+      (keyup)="chan(text)"
+    ></textarea>
+  </div>
+  <div style="text-align:center">
+    <img
+      src="assets/uploadbtn.svg"
+      (click)="openDialog(name, text)"
+      class="up-wid"
+    />
+  </div>
+  <!-- <div class="upload">
+    <div (click)="openDialog(name, text)">
+      Select image
+    </div>
+    <a
+      class="twitter"
+      href="https://twitter.com/intent/tweet?url=http://webcouperstest.com/malt/"
+      target="_blank"
+    ></a>
+  </div> -->
+</div>
+
+<div class="meethead">
+  Meet happy people
+</div>
+<div class="row meet">
+  <div class="col-4 img-dn" *ngFor="let dat of datas">
+    <div>
+      <img
+        [src]="dat.image_url"
+        width="100%"
+        (click)="viewpic(dat.image_url)"
+      />
+    </div>
+  </div>
+</div>
+
+<div style="text-align:center">
+  <img src="assets/viewall.svg" class="viewallbtn" (click)="openDialog2()" />
+</div>
+
+<div class="shaft">
+  Share your happiness with friends.
+</div>
+<div class="row social">
+  <div class="col-4">
+    <a
+      class="twitter"
+      href="https://twitter.com/intent/tweet?url=http://webcouperstest.com/malt/"
+      target="_blank"
+    >
+      <img src="assets/Twitter.svg" width="100%"
+    /></a>
+  </div>
+  <!-- <div class="col-3">
+        <img src="assets/Instagram.svg" width="100%" />
+      </div> -->
+  <div class="col-4">
+    <a
+      href="https://www.facebook.com/sharer/sharer.php?u=http://webcouperstest.com/malt/"
+      target="_blank"
+      ><img src="assets/Facebook.svg" width="100%"
+    /></a>
+  </div>
+  <div class="col-4">
+    <a
+      href="https://api.whatsapp.com/send?phone=whatsappphonenumber&text=Meet Happy People http://webcouperstest.com/malt/"
+      target="_blank"
+    >
+      <img src="assets/WhatsApp.svg" width="100%" />
+    </a>
+  </div>
+</div>
