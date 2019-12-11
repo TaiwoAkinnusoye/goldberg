@@ -26,6 +26,11 @@
   src: url(assets/roboto/Roboto-Light.ttf);
 }
 
+@font-face {
+  font-family: "Rockwell";
+  src: url("https://use.typekit.net/tjv0frv.css");
+}
+
 body {
   background: #000000;
   /* background: url(assets/Desktop-BG.svg); */

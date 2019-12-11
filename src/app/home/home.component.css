@@ -1,3 +1,12 @@
+.logo {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.logo img {
+  width: 15%;
+}
+
 .navbar-right {
   margin-right: 0px !important;
 }
