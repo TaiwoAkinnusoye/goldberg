@@ -27,8 +27,8 @@
 }
 
 body {
-  /* background: #f78009; */
-  background: url(assets/Desktop-BG.svg);
+  background: #000000;
+  /* background: url(assets/Desktop-BG.svg); */
   background-repeat: no-repeat;
   background-size: contain !important;
 }
