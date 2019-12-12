@@ -26,7 +26,7 @@ export class PreviewComponent implements OnInit {
 
   name;
   text;
-  hap = "Happiness is";
+  hap = "#Omoluabi is";
   imgsrc;
   img;
   filer;
