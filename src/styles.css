@@ -32,8 +32,8 @@
 }
 
 body {
-  background: #000000;
-  /* background: url(assets/Desktop-BG.svg); */
+  /* background: #000000; */
+  background: url(assets/omoluabi-goldberg-bg.jpg);
   background-repeat: no-repeat;
   background-size: contain !important;
 }
@@ -68,8 +68,8 @@ img:focus {
     max-width: initial !important;
   }
   body {
-    background: #000000;
-    /* background: url(assets/background.svg); */
+    /* background: #000000; */
+    background: url(assets/omoluabi-goldberg-bg.jpg);
     background-repeat: no-repeat;
   }
 }
