@@ -35,7 +35,7 @@ body {
   /* background: #000000; */
   background: url(assets/omoluabi-goldberg-bg.jpg);
   background-repeat: no-repeat;
-  background-size: contain !important;
+  background-size: cover !important;
 }
 .cdk-overlay-pane {
   width: 50% !important;
