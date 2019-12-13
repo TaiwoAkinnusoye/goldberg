@@ -60,6 +60,12 @@ img:focus {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
+
+.ng-tns-c2-1 {
+    background-image: url(/assets/omoluabi-template);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 @media screen and (max-width: 600px) {
   .cdk-overlay-pane {
     width: 100% !important;

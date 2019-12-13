@@ -63,7 +63,7 @@ export class PreviewComponent implements OnInit {
       // toDataURL defaults to png, so we need to request a jpeg, then convert for file download.
       a.href = canvas.toDataURL("image/png");
       // .replace("image/jpeg", "image/octet-stream");
-      a.download = "maltina.png";
+      a.download = "Omoluabi.png";
       a.click();
     });
   }
