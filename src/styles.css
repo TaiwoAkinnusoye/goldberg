@@ -62,7 +62,7 @@ img:focus {
 }
 
 .ng-tns-c2-1 {
-    background-image: url(/assets/omoluabi-template);
+    background-image: url(/assets/omoluabi-template) !important;
     background-size: 100%;
     background-repeat: no-repeat;
 }
