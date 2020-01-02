@@ -18,6 +18,7 @@ import * as Cloudinary from "cloudinary-core";
 import { FormsModule } from "@angular/forms";
 import { HappyComponent } from "./meme/happy.component";
 import { ViewhappyComponent } from "./viewmeme/viewhappy.component";
+import { OmoluabiComponent } from './omoluabi/omoluabi.component';
 
 //Auth service config
 
@@ -28,7 +29,8 @@ import { ViewhappyComponent } from "./viewmeme/viewhappy.component";
     PreviewComponent,
     SelimageComponent,
     HappyComponent,
-    ViewhappyComponent
+    ViewhappyComponent,
+    OmoluabiComponent
   ],
   imports: [
     BrowserModule,

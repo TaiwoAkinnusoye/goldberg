@@ -31,13 +31,11 @@
           <label for="YOURID" style="    margin-bottom: 20px;"
             ><img src="assets/upload.svg" width="100%"
           /></label>
-          <!-- <div class="sell" (click)="go()">
-            NEXT
-          </div> -->
         </div>
       </div>
       <div class="col-4 imgl" *ngFor="let image of imgs">
-        <div (click)="openDialog(image.link)">
+        <!-- <div (click)="openDialog(image.link)"> -->
+          <div (click)="go2()">
           <img [src]="image.link" width="100%" />
         </div>
       </div>
@@ -46,6 +44,5 @@
 </mat-dialog-content>
 
 <div id="loading" *ngIf="loader">
-  <!-- <img id="loading-image" src="assets/loader.gif" alt="Loading..." /> -->
   <div class="loader"></div>
 </div>

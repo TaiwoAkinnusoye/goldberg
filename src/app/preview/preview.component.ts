@@ -57,8 +57,16 @@ export class PreviewComponent implements OnInit {
     }
   }
 
+  hideDownloadBtn() {
+    let d = document.getElementById("dw");
+    d.addEventListener("click", (e) => {
+      d.style.visibility = "hidden"
+    });
+  }
+
   download() {
-    html2canvas(document.getElementById("results")).then(function(canvas) {
+    this.hideDownloadBtn();
+    html2canvas(document.getElementById("mat-dialog-1")).then(function(canvas) {
       var a = document.createElement("a");
       // toDataURL defaults to png, so we need to request a jpeg, then convert for file download.
       a.href = canvas.toDataURL("image/png");
@@ -70,9 +78,9 @@ export class PreviewComponent implements OnInit {
 
   getter() {
     //<<<---    using ()=> syntax
-
+    
     var that = this;
-    html2canvas(document.getElementById("results"), {
+    html2canvas(document.getElementById("mat-dialog-1"), {
       backgroundColor: "transparent"
     }).then(function(canvas) {
       let a = canvas.toDataURL("image/jpeg");

@@ -1,9 +1,9 @@
 import { Injectable } from "@angular/core";
-import { BehaviorSubject } from "rxjs";
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class DataService {
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   bg;
   name;
@@ -12,4 +12,8 @@ export class DataService {
   image;
   pre = true;
   view;
+
+  getCloudinaryImage(version, id) {
+    return fetch(`https://res.cloudinary.com/parpend/image/upload/v${version}/${id}.jpg`)
+  }
 }

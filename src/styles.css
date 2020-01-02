@@ -1,7 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 .mat-dialog-container {
-  background: #000000;
+    background-image: url(assets/omoluabi-template.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 645px !important;
+    height: 645px !important;
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -61,11 +65,6 @@ img:focus {
   -webkit-overflow-scrolling: touch;
 }
 
-.ng-tns-c2-1 {
-    background-image: url('/assets/omoluabi-template') !important;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
 @media screen and (max-width: 600px) {
   .cdk-overlay-pane {
     width: 100% !important;
@@ -77,5 +76,11 @@ img:focus {
     /* background: #000000; */
     background: url(assets/omoluabi-goldberg-bg.jpg);
     background-repeat: no-repeat;
+  }
+
+  .mat-dialog-container {
+    background-size: 100%;
+    width: 100% !important;
+    height: 100% !important;
   }
 }

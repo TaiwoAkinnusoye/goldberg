@@ -61,49 +61,26 @@ export class SelimageComponent implements OnInit {
 
         let file: File = fileList[0];
         let formData: FormData = new FormData();
-        formData.append("image", file, file.name);
+        formData.append("file", file, file.name);
+        formData.append('upload_preset', 'yees4cwb');
 
         this.http
-          .post("https://fastcoin.ng/api/images/", formData)
+          .post("https://api.cloudinary.com/v1_1/parpend/image/upload", formData)
           .map(res => res.json())
-          // .catch(error => Observable.throw(error))
           .subscribe(
             data => {
               this.loader = false;
-              console.log(data);
+              console.log('cloudinary data', data);
+              let version = data.version;
+              let cloudinary_id = data.public_id;
               this.senimg = data.image;
-              this.go();
-
-              // this.router.navigateByUrl("/fifth");
+              this.go2(version, cloudinary_id);
             },
             error => console.log(error)
           );
       }
     }
   }
-
-  // push() {
-
-  //   let formData: FormData = new FormData();
-  //   formData.append("action", "apply_effects");
-  //   formData.append("api_key", "wCDR6kBwws16D5gNji25numTbUCizOTw");
-  //   formData.append("session_id", this.session);
-  //   formData.append("effects[effect_id]", (100).toString());
-  //   console.log(formData);
-
-  //   this.http
-  //     .post("https://api.cmfapp.co.uk/api2/", formData)
-  //     .map(res => res.json())
-
-  //     .subscribe(
-  //       data => {
-  //         console.log(data);
-
-  //         this.router.navigateByUrl("/Result");
-  //       },
-  //       error => console.log(error)
-  //     );
-  // }
 
   imgs = [
     {
@@ -161,5 +138,10 @@ export class SelimageComponent implements OnInit {
     this.dialog.open(PreviewComponent, {
       panelClass: "custom-dialog-container"
     });
+  }
+
+  go2 (version, cloudinary_id) {
+    this.dialog.closeAll();
+    this.router.navigate(['omoluabi', version, cloudinary_id]);
   }
 }

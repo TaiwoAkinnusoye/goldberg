@@ -1,0 +1,25 @@
+.omoluabi-main {
+    background-image: url(../../assets/omoluabi-goldberg-bg.jpg);
+}
+
+.omoluabi-template-bg {
+    background-image: url(../../assets/omoluabi-template.jpg);
+    height: 600px;
+    width: 600px;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.omoluabi-img {
+    margin: 18% 0 0 18%;
+}
+
+.omoluabi_name {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: rockwell, sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 20px;
+}

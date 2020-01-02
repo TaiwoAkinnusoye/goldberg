@@ -1,0 +1,7 @@
+{
+    "/omoluabi/*": {
+        "target": "https://res.cloudinary.com",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}
